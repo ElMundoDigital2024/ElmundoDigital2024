@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog IU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            display: none;
+        }
+        #inicioContent {
+            display: block;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        .TituloCentral {
+            color: rgb(219, 221, 226);
+        }
+        body {
+    background-color: rgb(105, 140, 183);
+}
+.Subtitulos {
+            color: rgb(219, 221, 226);
+        }
+        .TituloGit {
+            color: rgb(232, 163, 25);
+        }
+        .code-container pre {
+            margin: 0;
+        }
+        .copy-button:hover {
+            background-color: #555;
+        }
+        .code-container {
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#" onclick="showContent('inicioContent')">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Entradas 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showContent('hardwareContent')">Hardware</a>
+                <a href="#" onclick="showContent('GithubContent')">Como Utilizar Git</a>
+                <!-- <a href="#" onclick="showContent('hardwareContent2')">Quien Soy</a> -->
+                
+                </div>
+        
+        </div>
+    </nav>
+
+    <!-- Contenido de Inicio -->
+    <div id="inicioContent" class="content">
+       <center> <h1 class="TituloCentral" >Mi Primer Blog En la IU Digital</h1></center>
+      <center> <img src="img/Estudio.png" alt="Estudiante desarrollando" style="width:250px;height:auto;"></center>
+       <h2 class="Subtitulos">Bienvenidos a mi Blog</h2>
+        <p>Hola, soy Jeferson Cataño, estudiante de primer semestre de Ingeniería de Software y Datos
+             en la Universidad IU Digital de Antioquia. Este blog es un proyecto personal que he decidido desarrollar
+              en el marco de la asignatura Introducción a la Ingeniería de  Software y Datos.</p>
+              <h2 class="Subtitulos">¿Qué encontrarán en este blog?</h2>
+              <p>A lo largo de este semestre, iré compartiendo mis experiencias, aprendizajes,
+                 y reflexiones mientras avanzo en mi formación como ingeniero. Aquí podrán encontrar:</p>
+                 <li> publicación de entradas</li>
+                 <li> Proyectos prácticos en los que aplicaré los conocimientos adquiridos</li>
+                 <li> Retos y soluciones que enfrentaré durante el desarrollo de la asignatura.</li>
+                 <li> Requerimientos de la asignatura </li>
+
+                 <h2 class="Subtitulos">Objetivo del blog:</h2>
+                 <p>Mi objetivo principal con este blog es documentar mi proceso de aprendizaje,
+                     así como servir de recurso para otros estudiantes que estén interesados en el 
+                     campo de la Ingeniería de Software y Datos. Además, quiero utilizar este espacio 
+                     para plasmar mi crecimiento académico y profesional, de manera que al final del semestre,
+                      pueda tener un registro claro de mi evolución.</p>
+                      <p>Los invito a seguirme en este viaje de descubrimiento y aprendizaje. Estoy seguro de que
+                         será una experiencia enriquecedora, llena de desafíos y logros que me acercarán cada vez más
+                          a mi meta de convertirme en un ingeniero competente y apasionado.</p>
+                          <p>¡Gracias por acompañarme!</p>
+            
+    
+    </div>
+
+    <!-- Contenido de Hardware -->
+    <div id="hardwareContent" class="content">
+      <center>  <h1 class="Subtitulos">Información sobre el Hardware</h1></center>
+
+    <p>El hardware es uno de los componentes fundamentales en el mundo de la
+         informática y la tecnología. Se refiere a todos los elementos físicos 
+         que componen un sistema informático.</p>
+
+    <h2  class="Subtitulos">¿Qué es el Hardware?</h2>
+    <p>El hardware es el conjunto de componentes físicos que forman parte de un 
+        sistema informático. Estos componentes incluyen todas las partes tangibles 
+        que puedes tocar, como la unidad central de procesamiento (CPU), la memoria, 
+        los dispositivos de almacenamiento, los periféricos y otros dispositivos electrónicos.</p>
+
+        
+    <h2  class="Subtitulos">Tipos de Hardware</h2>
+    <center> <img src="img/Hardwaree.webp" alt="Estudiante desarrollando" style="width:400px;height: 300px;"></center>
+    <h3 class="Subtitulos">1. Hardware Básico</h3>
+    <ul>
+        <li><strong>Procesador (CPU):</strong> Es el cerebro del ordenador, 
+            encargado de ejecutar las instrucciones de los programas.</li>
+        <li><strong>Memoria RAM:</strong> Es la memoria de acceso aleatorio 
+            donde se almacenan temporalmente los datos que el procesador necesita acceder rápidamente.</li>
+        <li><strong>Placa Base (Motherboard):</strong> Es la tarjeta principal del
+             sistema que conecta todos los componentes entre sí.</li>
+        <li><strong>Disco Duro (HDD/SSD):</strong> Es el dispositivo de almacenamiento donde se guardan los datos
+             de forma permanente.</li>
+        <li><strong>Fuente de Alimentación:</strong> Proporciona la energía necesaria a todos los componentes del sistema.</li>
+    </ul>
+
+    <h3  class="Subtitulos" >2. Hardware Periférico</h3>
+    <ul>
+        <li><strong>Teclado y Ratón:</strong> Dispositivos de entrada que permiten la interacción con el ordenador.</li>
+        <li><strong>Monitor:</strong> Dispositivo de salida que muestra la información visual al usuario.</li>
+        <li><strong>Impresora:</strong> Dispositivo de salida que permite imprimir documentos físicos.</li>
+        <li><strong>Altavoces y Micrófono:</strong> Dispositivos de entrada y salida de audio.</li>
+    </ul>
+
+    <h3  class="Subtitulos">3. Hardware de Almacenamiento</h3>
+    <ul>
+        <li><strong>Unidades de Estado Sólido (SSD):</strong> Dispositivos de almacenamiento más rápidos
+             y duraderos que los discos duros tradicionales.</li>
+        <li><strong>Discos Duros (HDD):</strong> Dispositivos de almacenamiento 
+            que usan platos magnéticos para guardar datos.</li>
+        <li><strong>Unidades Flash (USB):</strong> Dispositivos portátiles para almacenar y transferir datos.</li>
+    </ul>
+
+    <h3  class="Subtitulos">4. Hardware de Red</h3>
+    <ul>
+        <li><strong>Tarjeta de Red:</strong> Componente que permite la conexión de un ordenador a una red.</li>
+        <li><strong>Router:</strong> Dispositivo que dirige el tráfico de datos entre redes, como Internet y una red local.</li>
+        <li><strong>Switch:</strong> Dispositivo que conecta varios dispositivos dentro de una misma red.</li>
+    </ul>
+
+    <h2 class="Subtitulos">Evolución del Hardware</h2>
+    <center> <img src="img/ae8c2a21-d121-46c8-81d8-32c34ecf82a0.webp" alt="Estudiante desarrollando" style="width:400px;height: 300px;"></center>
+    <p>El hardware ha evolucionado rápidamente en las últimas décadas, con mejoras significativas en la velocidad, 
+        capacidad y eficiencia energética. Los procesadores son cada vez más potentes, los dispositivos de almacenamiento 
+        más rápidos y compactos, y los periféricos más inteligentes y conectados.</p>
+
+    <h2  class="Subtitulos">Importancia del Hardware</h2>
+    <center> <img src="img/Impo.webp" alt="Estudiante desarrollando" style="width:400px;height: 300px;"></center>
+    <p>El hardware es esencial para el funcionamiento de cualquier sistema informático. Sin él,
+         no sería posible ejecutar software, procesar información ni interactuar con dispositivos digitales.
+          Además, la calidad y capacidad del hardware determinan en gran medida el rendimiento de un sistema y su 
+          capacidad para manejar tareas complejas.</p>
+
+    <h2 class="Subtitulos">Tendencias Actuales en Hardware</h2>
+    <ul>
+        <li><strong>Computación en la Nube:</strong> Mucho del procesamiento y almacenamiento de datos se está moviendo a 
+            la nube, reduciendo la necesidad de hardware potente en dispositivos individuales.</li>
+        <li><strong>Internet de las Cosas (IoT):</strong> La proliferación de dispositivos conectados está 
+            impulsando el desarrollo de hardware más pequeño y eficiente.</li>
+        <li><strong>Inteligencia Artificial:</strong> Los avances en IA están llevando a la creación de 
+            hardware especializado, como las unidades de procesamiento tensorial (TPU).</li>
+    </ul>
+
+    <h2  class="Subtitulos" >Conclusión</h2>
+    <p>El hardware es una parte crucial de la tecnología moderna, y su desarrollo continuo es clave
+         para la innovación en todos los campos de la informática. Desde el ordenador personal hasta 
+         los servidores en la nube, el hardware sigue siendo el pilar sobre el que se construyen los avances tecnológicos.</p>
+    </div>
+   <!-- <div id="hardwareContent2" class="content">
+        <h1>Wau</h1>
+        <p>Hola.</p> -->
+    </div>
+
+</div>
+
+<!-- Contenido de Github -->
+<div id="GithubContent" class="content">
+ <center><h1 class=" TituloGit">Fundamentos de Git: Desde la Inicialización Local hasta la Colaboración en Repositorios Remotos</h1></center>
+ <p>En el mundo del desarrollo de software, el manejo eficiente del control de versiones es esencial para colaborar y mantener un proyecto de manera
+     organizada. Git, una de las herramientas más populares para este fin, nos permite gestionar cambios en nuestro código de forma efectiva. En esta ocasión, 
+     exploraremos algunos de los aspectos clave para trabajar con Git, desde la inicialización de un repositorio local, hasta la creación de branches y la conexión 
+     con repositorios remotos.
+
+        Primero, veremos cómo crear un repositorio local, que es el primer paso para comenzar a controlar nuestro código. Luego, hablaremos sobre la creación de ramas o 'branches',
+         que son fundamentales para trabajar en nuevas funcionalidades o correcciones sin afectar el código principal. Finalmente, aprenderemos a conectar nuestro repositorio local a uno remoto en plataformas
+          como GitHub, lo que nos permitirá colaborar con otros desarrolladores y mantener nuestro código sincronizado en la nube.
+        
+        Cada uno de estos pasos se complementa con comandos prácticos que nos ayudarán a entender no solo cómo hacerlo, sino también el propósito detrás de cada acción en el flujo de trabajo con Git.:</p> 
+       <center> <h2 class="TituloGit">Inicialización del repositorio localmente</h2></center>
+<p>La inicialización de un repositorio local es el primer paso para comenzar a trabajar con Git en un proyecto. Este proceso crea una estructura de directorios oculta (llamada .git) en el proyecto, la cual Git utilizará para rastrear los cambios.
+ 
+A continuación, te explico el proceso con detalle, y cómo puedes usar etiquetas HTML, por ejemplo, un div para explicar los comandos relevantes:
+ 
+
+</p>
+
+<h2 class=" TituloGit">Pasos para inicializar un repositorio local en Git:
+ 
+</h2>
+
+<h3 class="Subtitulos"> 1. Crea o navega al directorio de tu proyecto. </h3>
+   <p>Si ya tienes un proyecto, simplemente navega hasta el directorio usando la terminal o línea de comandos:</p>
+   
+
+   <div class="code-container">
+    <button class="copy-button" onclick="copyCode(1)">Copiar código</button>
+    <pre><code id="code1">cd /ruta/de/tu/proyecto</code></pre>
+</div>
+        
+<h3 class="Subtitulos"> Inicializa el repositorio de Git.</h3>
+ 
+   <p>Ejecuta el siguiente comando en la terminal para inicializar un nuevo repositorio
+     de Git en el directorio:</p>
+
+  
+    
+    <!-- Segundo fragmento de código -->
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode(2)">Copiar código</button>
+        <pre><code id="code2">git init</code></pre>
+    </div>
+
+    <p>Este comando crea una carpeta oculta llamada .git en el directorio de tu proyecto. Esa carpeta contiene 
+        todos los archivos y la información que Git necesita para gestionar el repositorio.</p>
+
+        <h3 class="Subtitulos"> 3. Añade archivos al repositorio.</h3>
+        <p>Una vez inicializado el repositorio, puedes agregar archivos para que Git comience a rastrearlos. 
+            Utiliza el comando git add para agregar archivos:</p>
+
+            <div class="code-container">
+                <button class="copy-button" onclick="copyCode(3)">Copiar código</button>
+                <pre><code id="code3">git add .</code></pre>
+            </div>
+
+            <p>El punto (.) indica que quieres agregar todos los archivos en el directorio actual al área de preparación (staging area).
+            </p>
+
+            <h3 class="Subtitulos"> 4. Realiza un commit inicial. </h3>
+            <p> Una vez que los archivos están en el área de preparación,
+                puedes confirmar los cambios con un commit:</p>
+
+                <div class="code-container">
+                    <button class="copy-button" onclick="copyCode(4)">Copiar código</button>
+                    <pre><code id="code4">git commit -m "Primer commit"</code></pre>
+                </div>
+
+                <center> <h2 class="TituloGit">Creación de branches</h2></center>
+
+                <p class="Subtitulos">Las ramas (branches) en Git: Qué son y cómo utilizarlas correctamente</p>
+                <p>En el desarrollo de software, es muy común que trabajemos en diferentes funcionalidades, correcciones o mejoras al mismo tiempo, sin querer afectar el código principal de nuestro 
+                    proyecto. Aquí es donde las ramas, o branches, en Git juegan un papel crucial</p>
+
+                    <p class="Subtitulos">¿Qué es una rama (branch)?</p>
+                    <p>Una rama o branch es una versión del código del proyecto sobre el que estás trabajando. Estas ramas ayudan a mantener el orden en el control de versiones y manipular el código de forma segura.
+
+                        En otras palabras, un branch o rama en Git es una rama que proviene de otra. Imagina un árbol, que tiene una rama gruesa, y otra más fina, en la rama más gruesa tenemos los commits principales y 
+                        en la rama fina tenemos otros commits que pueden ser de hotfix, devlopment entre otros.</p>
+
+                        <center> <img src="img/Screenshot_2.png" alt="Creación de branches" style="width:400px;height: 300px;"></center>
+
+                <p class="Subtitulos">Clases de branches o ramas en Git</p>   
+                            <ul>
+                    <li ><strong class="Subtitulos">Rama main (Master):</strong> Por defecto, el proyecto se crea en una rama llamada Main (anteriormente conocida como Master). Cada vez que añades código y guardas los cambios, estás haciendo un commit, que es añadir el nuevo código a una rama.
+                         Esto genera nuevas versiones de esta rama o branch, hasta llegar a la versión actual de la rama Main.</li>
+                    <li><strong class="Subtitulos">2. Rama development</strong> Cuando decides hacer experimentos, puedes generar ramas experimentales (usualmente llamadas development), que están basadas en alguna rama main, pero sobre las cuales puedes hacer cambios a tu gusto sin necesidad
+                         de afectar directamente al código principal.</li>
+                    <li><strong class="Subtitulos" >3. Rama hotfix:</strong> En otros casos, si encuentras un bug o error de código en la rama Main (que afecta al proyecto en producción), tendrás que crear una nueva rama (que usualmente se llaman bug fixing o hot fix) para hacer los arreglos necesarios. Cuando los cambios estén listos, los tendrás que fusionar con la rama Main para que los cambios sean aplicados. Para esto, se usa un comando llamado Merge, que mezcla los cambios de la rama que originaste a la rama Main.
+
+                        Todos los commits se aplican sobre una rama. Por defecto, siempre empezamos en la rama Main (pero puedes cambiarle el nombre si no te gusta) y generamos nuevas ramas, a partir de esta, para crear flujos de trabajo independientes.</li>
+                </ul>
+
+                <h2 class="TituloGit">Cómo crear una rama en Git</h2>
+                <p>El comando git branch permite crear una rama nueva. Si quieres empezar a trabajar en una nueva función, puedes crear una rama nueva a partir de la rama master con git branch new_branch. Una vez creada, puedes usar git checkout new_branch para cambiar a esa rama.
+
+                    Recuerda que todas tus versiones salen de la rama principal o Master y de allí puedes tomar una versión específica para crear otra rama de versiones.</p>
+            
+                <p> Vamos a seguir el siguiente ejemplo:</p>
+
+               <p class="TituloCentral">Para crear una nueva rama, utiliza el comando:</p>
+
+               <div class="code-container">
+                <button class="copy-button" onclick="copyCode(5)">Copiar código</button>
+                <pre><code id="code5">git branch nombre-de-la-rama"</code></pre>
+            </div>
+
+            <p>Esto simplemente crea una rama nueva, pero no cambia tu trabajo actual a esa rama.
+                 Imagina que creaste una rama llamada feature-nueva.</p>
+
+                 <h2 class="Subtitulos">Cambiarse a la nueva rama</h2>
+                 <p>Para empezar a trabajar en la nueva rama, debes "moverte" a ella con el siguiente comando:</p>
+                 <div class="code-container">
+                    <button class="copy-button" onclick="copyCode(6)">Copiar código</button>
+                    <pre><code id="code6">git checkout nombre-de-la-rama"</code></pre>
+
+                </div>
+
+                <p>O también puedes crear y moverte a la nueva rama en un solo paso con:</p>
+                <div class="code-container">
+                    <button class="copy-button" onclick="copyCode(7)">Copiar código</button>
+                    <pre><code id="code7">git checkout -b nombre-de-la-rama"</code></pre>
+                </div>
+                <p>Siguiendo con nuestro ejemplo, usarías:</p>
+
+                <div class="code-container">
+                    <button class="copy-button" onclick="copyCode(8)">Copiar código</button>
+                    <pre><code id="code8">git checkout nombre-de-la-rama"</code></pre>
+
+                </div>
+<p>Con este comando, has creado la rama y ahora estás listo para trabajar en feature-nueva.</p>
+<h3 class="Subtitulos">Realiza tus cambios y confirma (commit)</h3>
+<p>Una vez en la nueva rama, puedes empezar a hacer tus cambios, agregar archivos y hacer commits de manera normal:</p>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode(9)">Copiar código </button>
+    <pre><code id="code9">git add archivo-modificado
+        git commit -m "Mensaje describiendo los cambios"</code></pre>
+
+</div>          
+
+<h3 class="Subtitulos">Fusionar ramas (merge)</h3>
+<p>Cuando hayas terminado de trabajar en tu nueva funcionalidad o corrección, lo más común es fusionar (merge) los cambios de tu rama con la rama principal (main o master).
+     Para ello, primero asegúrate de estar en la rama principal:</p>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode(10)">Copiar código</button>
+    <pre><code id="code10">git checkout main"</code></pre>
+
+</div> 
+<p>Luego, puedes fusionar los cambios de la rama feature-nueva con el siguiente comando:</p>
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode(11)">Copiar código</button>
+    <pre><code id="code11">git merge feature-nueva"</code></pre>
+ </div> 
+ <p>Si todo va bien, tus cambios se integrarán en la rama principal.</p>
+
+   
+ <li><strong class="Subtitulos">Ejemplo práctico:</strong> Imagina que estás desarrollando una 
+    nueva funcionalidad en tu aplicación, pero no quieres afectar la versión estable de tu proyecto
+     que está en la rama principal (main). Sigues estos pasos:</li>
+     <h2 class="TituloGit">  1. Creas una nueva rama nueva-funcionalidad:</h2>
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode(12)">Copiar código</button>
+        <pre><code id="code12">git checkout -b nueva-funcionalidad</code></pre>
+     </div> 
+     <h3 class="Subtitulos">  2. los cambios en tu código, los confirmas y sigues trabajando.</h3>
+     <h3 class="Subtitulos">  3. Cuando la nueva funcionalidad está lista, cambias a la rama principal:</h3>
+     <div class="code-container">
+        <button class="copy-button" onclick="copyCode(13)">Copiar código</button>
+        <pre><code id="code13">git checkout main</code></pre>
+     </div> 
+   
+     <h3 class="Subtitulos">  4. Fusionas la nueva funcionalidad:
+     </h3>
+
+     <div class="code-container">
+        <button class="copy-button" onclick="copyCode(14)">Copiar código</button>
+        <pre><code id="code14">git checkout main</code></pre>
+     </div> 
+   <P>Y listo, tu nueva funcionalidad está ahora en la versión principal del proyecto sin 
+    haber interferido con el trabajo anterio</P>
+
+    <h2 class="TituloGit" >Conclusión</h2>
+    <p>Las ramas en Git son una herramienta poderosa para mantener el orden y la seguridad en tu proyecto, permitiéndote trabajar en varias cosas a la vez sin correr el riesgo de dañar el código que ya funciona. Usar ramas correctamente facilita la colaboración y asegura que las nuevas características o correcciones estén bien
+         probadas antes de integrarse en la versión principal del proyecto.</p>
+   
+<center><h1 class="TituloGit">Conectar un Repositorio Local con un Repositorio Remoto: Instrucciones Paso a Paso</h1></center>
+
+<p>Cuando trabajas con Git, una de las tareas más comunes es sincronizar tu trabajo local con un repositorio remoto, como los que se alojan en plataformas como GitHub, GitLab o Bitbucket. Esta conexión te permite almacenar tu código en la nube, colaborar con otros desarrolladores y hacer un seguimiento 
+    de los cambios de manera centralizada.</p>
+
+    <h4 class="Subtitulos">¿Qué es un repositorio remoto?</h4>
+    <p>Un repositorio remoto es simplemente una copia de tu repositorio local que se aloja en un servidor externo, como GitHub. Este repositorio remoto te permite acceder a tu código desde 
+        cualquier lugar y compartirlo con otros colaboradores.</p>
+
+        <h4 class="Subtitulos">¿Por qué es importante conectar el repositorio local con uno remoto?</h4>
+
+        <ul>
+            <li ><strong class="Subtitulos">Colaboración:</strong> Permite que varios desarrolladores trabajen juntos, ya que pueden clonar el repositorio remoto y hacer cambios desde sus propios dispositivos.</li>
+            <li><strong class="Subtitulos">Copia de seguridad: </strong> Tener el código en la nube asegura que no lo pierdas si algo le pasa a tu máquina local.</li>
+            <li><strong class="Subtitulos" >Despliegue: </strong> Muchos entornos de producción o servidores obtienen el código directamente desde repositorios remotos para desplegar las aplicaciones.</li>
+        </ul>
+
+        <h4 class="Subtitulos"> Cómo conectar un repositorio local con uno remoto</h4>
+        <p>Ahora vamos a ver los pasos para conectar un repositorio local a uno remoto en GitHub. Asegúrate de haber creado un repositorio local en tu máquina y un
+             repositorio vacío en GitHub.</p>
+
+             <h4 class="Subtitulos">1.Inicializar tu repositorio local (si aún no lo has hecho) </h4>
+
+<p>Si aún no has inicializado tu repositorio local, puedes hacerlo con:</p>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode(15)">Copiar código</button>
+    <pre><code id="code15">git init</code></pre>
+ </div> 
+<p>Este comando crea un nuevo repositorio local en la carpeta donde estás trabajando.</p>
+
+<h4 class="Subtitulos">2. Agregar el repositorio remoto</h4>
+<p>Una vez que tienes tu repositorio local, necesitas vincularlo con el repositorio remoto. El comando para hacer esto es git remote add. Vamos a suponer que ya creaste un repositorio vacío en GitHub llamado mi-proyecto. Para 
+    agregar este repositorio remoto, usarías el siguiente comando:</p>
+
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode(16)">Copiar código</button>
+        <pre><code id="code16">git remote add origin https://github.com/tu-usuario/mi-proyecto.git
+        </code></pre>
+     </div>
+
+<h5>Aquí</h5>
+<ul>
+    <li ><strong class="Subtitulos">origin:</strong> Es el nombre por defecto que Git le da a la conexión remota. Puedes llamarlo como quieras, pero "origin" es lo más común.</li>
+    <li><strong class="Subtitulos">URL del repositorio: </strong> Es la dirección del repositorio remoto en GitHub.</li>
+   
+</ul>
+<p>Este comando le dice a Git que tu repositorio local está vinculado a ese repositorio remoto.</p>
+
+
+    </div>
+    <!-- Script para manejar la visualización de contenido -->
+    <script>
+        function showContent(contentId) {
+            // Ocultar todos los elementos de contenido
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Mostrar el contenido seleccionado
+            var selectedContent = document.getElementById(contentId);
+            selectedContent.style.display = 'block';
+        }
+        function copyCode(codeNumber) {
+        const code = document.querySelector(`#code${codeNumber}`).textContent;
+        navigator.clipboard.writeText(code).then(() => {
+            alert("Código copiado al portapapeles");
+        }).catch(err => {
+            console.error('Error al copiar el código: ', err);
+        });
+    }
+    </script>
+
+</body>
+</html>
